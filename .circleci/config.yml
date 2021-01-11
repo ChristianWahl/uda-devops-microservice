@@ -11,7 +11,7 @@ jobs:
     working_directory: ~/repo/project-ml-microservice-kubernetes
     steps:
       - checkout:
-          path: ~/repo/project-ml-microservice-kubernetes
+          path: ~/repo
       # Download and cache dependencies
       - restore_cache:
           keys:
