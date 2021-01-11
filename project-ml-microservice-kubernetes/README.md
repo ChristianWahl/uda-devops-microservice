@@ -1,5 +1,7 @@
 <include a CircleCI status badge, here>
 
+This README has been extended for passing the "Operationalize a Machine Learning Microservice API" milestone.
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -40,3 +42,13 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+## Upload to DockerHub
+* Adjust the `dockerpath` in `upload_docker.sh` in order to push the image to DockerHub
+
+## Create CI pipeline via CircleCi
+* Simply adjust the `circleci` config placed in the root folder of this project and setup your project in your CircleCI Account
+
+## Use the app
+
+* After running the app in docker or kubernetes call `make_predictions.sh` to make a example prediction on house prices
