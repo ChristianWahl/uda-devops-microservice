@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/ChristianWahl/uda-devops-microservice.svg?style=svg)](https://circleci.com/gh/ChristianWahl/uda-devops-microservice)
 
 This README has been extended for passing the "Operationalize a Machine Learning Microservice API" milestone.
 
