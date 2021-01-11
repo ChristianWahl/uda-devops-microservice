@@ -1,1 +1,28 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) ➜  project-ml-microservice-kubernetes git:(master) ✗ ./run_kubernetes.sh 
+deployment.apps/uda-house-price-predictor created
+NAME                                        READY   STATUS              RESTARTS   AGE
+uda-house-price-predictor-975478758-xdxzd   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) ➜  project-ml-microservice-kubernetes git:(master) ✗ kubectl get pod
+NAME                                        READY   STATUS    RESTARTS   AGE
+uda-house-price-predictor-975478758-xdxzd   1/1     Running   0          113s
+(.devops) ➜  project-ml-microservice-kubernetes git:(master) ✗ ./run_kubernetes.sh
+error: failed to create deployment: deployments.apps "uda-house-price-predictor" already exists
+NAME                                        READY   STATUS    RESTARTS   AGE
+uda-house-price-predictor-975478758-xdxzd   1/1     Running   0          115s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+(separate tab)
+--------------
+(.devops) ➜  project-ml-microservice-kubernetes git:(master) ✗ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
